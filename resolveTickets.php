@@ -34,7 +34,7 @@ function checkResolvedStatus($statusId, $client)
     ]);
 
     foreach ($issues['issues'] as $issue) {
-        if (strtotime($issue['updated_on']) < strtotime('-14 day')) {
+        if (strtotime($issue['updated_on']) < strtotime('-7 day')) {
             $client->issue->setIssueStatus($issue['id'], 'Closed');
         }
     }
