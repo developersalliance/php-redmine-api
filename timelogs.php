@@ -51,6 +51,4 @@ foreach ($userEntries as $user => $timeentries) {
     $message .= "\n";
 }
 
-$message = $message;
-
 $channel->postMessage($message);

@@ -46,7 +46,6 @@ foreach ($group['group']['users'] as $user) {
 
 function getTimeEntries($issueId, $client)
 {
-    sleep(2);
     $timeEntries = $client->time_entry->all([
         'issue_id' => $issueId,
     ]);
